@@ -43,14 +43,3 @@ display_drv = GC9A01(
     power_pin=None,
     power_on_high=True,
 )
-
-i2c = I2C(0, sda=Pin(6), scl=Pin(7), freq=400000)
-touch_drv = CST8XX(i2c, irq_pin=5, rst_pin=13)
-touch_read_func = touch_drv.get_point
-touch_rotation_table = (0, 5, 6, 3)
-
-touch_dev = display_drv.broker.create_device(
-    type=Devices.TOUCH,
-    read=touch_read_func,
-    data=touch_rotation_table,
-)
