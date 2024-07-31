@@ -50,7 +50,6 @@
       ["examples/tiny_toasters/__init__.py", "github:bdbarnett/mpdisplay/examples/tiny_toasters/__init__.py"],
       ["examples/tiny_toasters/tiny_toasters.py", "github:bdbarnett/mpdisplay/examples/tiny_toasters/tiny_toasters.py"],
       ["examples/tiny_toasters/tiny_toasters_bitmaps.py", "github:bdbarnett/mpdisplay/examples/tiny_toasters/tiny_toasters_bitmaps.py"],
-      ["lib/adafruit_ticks.py", "github:bdbarnett/mpdisplay/utils/adafruit_ticks.py"],
       ["lib/area.py", "github:bdbarnett/mpdisplay/lib/area.py"],
       ["lib/binfont.py", "github:bdbarnett/mpdisplay/lib/binfont.py"],
       ["lib/bmp565.py", "github:bdbarnett/mpdisplay/lib/bmp565.py"],
