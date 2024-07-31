@@ -3,11 +3,7 @@
     ],
     "deps": [
         ["github:bdbarnett/mpdisplay", "main"],
-        ["github:bdbarnett/lcd_bus", "main"],
-        ["github:bdbarnett/timer", "main"],
-        ["github:bdbarnett/console", "main"],
-        ["github:bdbarnett/playing_cards", "main"],
-        ["github:bdbarnett/testris", "main"],
+        ["github:bdbarnett/lcd_bus", "main"]
     ],
     "version": "0.1"
   }
