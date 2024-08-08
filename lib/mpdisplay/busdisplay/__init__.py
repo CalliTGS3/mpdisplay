@@ -216,6 +216,10 @@ class BusDisplay(_BaseDisplay):
                 False, # disable bus byte swapping because it swaps in place
             )
 
+        # Run the display reset
+        self.reset()
+        sleep_ms(100)
+
         # Run the display driver init_sequence.
         if type(init_sequence) is bytes:
             self._init_bytes(init_sequence)
