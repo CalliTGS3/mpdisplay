@@ -198,11 +198,18 @@ class BusDisplay(BaseDisplay):
                 # PWM not implemented on this platform or Pin
                 self._backlight_is_pwm = False
 
+        # CalliTGS3
+        # Run the display reset
+        self.reset()
+        sleep_ms(100)
+
+        # CalliTGS3
         # Run the display driver init_sequence.
-        if type(init_sequence) is bytes:
+        if type(init_sequence) is bytearray:
             self._init_bytes(init_sequence)
         elif type(init_sequence) is list or type(init_sequence) is tuple:
             self._init_list(init_sequence)
+        print('Init sequence done')    
 
         # Run the display driver init() method, which also gets called by rotation.setter
         # This should run immediately after _init_bytes() or _init_list() but before
