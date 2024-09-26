@@ -1,11 +1,10 @@
 """ Waveshare Round Display for XIAO GC9A01 240x240 display on ESP32-S3-Touch-LCD-1.28"""
 
-from lcd_bus import SPIBus
+from spibus import SPIBus
 from gc9a01 import GC9A01
 from machine import Pin, I2C
 from cst8xx import CST8XX
-from mpdisplay import Devices
-
+from eventsys.devices import Devices, Broker
 
 display_bus = SPIBus(
     dc=8,
