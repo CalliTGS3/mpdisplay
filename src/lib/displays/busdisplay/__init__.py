@@ -199,7 +199,7 @@ class BusDisplay(BaseDisplay):
                 self._backlight_is_pwm = False
 
         # Run the display driver init_sequence.
-        if type(init_sequence) is bytes:
+        if type(init_sequence) is bytes or type(init_sequence) is bytearray:
             self._init_bytes(init_sequence)
         elif type(init_sequence) is list or type(init_sequence) is tuple:
             self._init_list(init_sequence)
